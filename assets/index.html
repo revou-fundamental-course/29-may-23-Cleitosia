@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Haegeum Studio </title>
+    <link rel="stylesheet" href="../css/index.css" /> 
+</head>
+<body>
+    <header class="home">
+        <img src="../img/haege.png" alt="Haegeum Logo" class="logo">
+        <div class="nav-bar">
+            <div class="nav-item"> Home </div>
+            <div class="nav-item"><a href="profile.html"> About Us </a></div> 
+            <div class="nav-item"> Movies </div>
+            <div class="nav-item"> Contact Us </div>
+        </div>
+    </header>
+    
+    <div id="hero" class="hero">
+        <h1 class="hero-title"> Hi <span id="name"></span>, Welcome to Haegeum Studio!</h1>
+
+        <script>
+            var name = prompt("Insert your name");
+            document.getElementById("name").innerText = name;
+        </script>
+
+        <h2 class="hero-subtitle"> Your gateway to a universe of boundless creativity </h2>
+    </div>
+    <br>
+    <br>
+    <div id="headquarters-section">
+        <h1 align="center"> Our Headquarters </h1>
+        <br>
+        <div class="wrapper">
+            <div class="headquarters-image-container">
+                <div class="headquarters-image-Jakarta"></div>
+                <h3> Jakarta </h3>
+            </div> 
+            <div class="headquarters-image-container">
+                <div class="headquarters-image-Seoul"></div>
+                <h3> Seoul </h3>
+            </div> 
+            <div class="headquarters-image-container">
+                <div class="headquarters-image-Paris"></div>
+                <h3> Paris </h3>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="message-us">
+        <h1 align="center"> Message Us </h1>
+    </div>
+    <br>
+    <div class="message-us-form" style="flex-direction: row; display: flex;">
+        <form name="message-form" onsubmit="return validateForm()"> 
+            <table>
+                <tr>
+                    <td> Name </td>
+                    <td> : </td>
+                    <td><input id="input-name"
+                        type="text" name="full-name" placeholder="type your name here"></td>
+                </tr>
+                <tr>
+                    <td> Birth Date </td>
+                    <td> : </td>
+                    <td><input id="birth-date"
+                        type="date" name="birth-date"></td>
+                </tr>
+                <tr>
+                    <td> Gender </td>
+                    <td> : </td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" /> 
+                        <label for="male"> Laki-laki </label>
+                        <input type="radio" id="female" name="gender" value="female" /> 
+                        <label for="female"> Perempuan </label>
+                    </td>
+                </tr>
+                <tr>
+                    <td> Message </td>
+                    <td> : </td>
+                    <td>
+                        <textarea placeholder="Insert your message here" name="message"></textarea>
+                    </td>
+                </tr>
+            </table>
+            <button id="submit"> Submit </button>
+        </form>
+        <div class="form-output">
+            <p> Name: <span id="sender-full-name"></span></p>
+            <p> Birth Date: <span id="sender-birth-date"></span></p>
+            <p> Gender: <span id="sender-gender"></span></p>
+            <p> Message: <span id="sender-message"></span></p>
+        </div>
+    </div>
+    </div>
+    <div></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p> ©2023 HAEGEUM STUDIO ALL RIGHTS RESERVED | PRIVACY POLICY |
+            TERMS OF SERVICE | GOOGLE PRIVACY POLICY
+        </p>
+    </footer>
+
+    <script src="../javascript/script.js"></script>
+
+</body>
+</html>
