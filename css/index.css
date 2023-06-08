@@ -1,0 +1,237 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 .3rem .3rem rgba(0,0,0,.1);
+    padding-left: 20pt;
+    padding-right: 20pt;
+}
+
+.logo {
+    height: 2.5cm;
+}
+
+.hero {
+    background: url("../img/beach.jpg");
+    height: 560px;
+    object-fit: contain;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-top: 16%;
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+.nav-bar {
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.nav-item {
+    padding: 5px 1cm;
+    width: 78px;
+    border-right: 1px solid grey;
+    text-align: center;
+    cursor: pointer;
+} 
+
+.nav-item:hover {
+    background: #FFF2EF;
+    margin-top: -3px;
+}
+
+.nav-bar:last-child {
+    border-right: none;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.headquarters-image-Jakarta {
+    height: 5cm;
+    width: 5cm;
+    border-radius: 50%;
+    border: 0.3px solid black;
+    background-image: url(../img/jakarta.jpg);
+    background-size: cover;
+}
+
+.headquarters-image-Seoul{
+    height: 5cm;
+    width: 5cm;
+    border-radius: 50%;
+    border: 0.3px solid black;
+    background-image: url(../img/seoul.jpg);
+    background-size: cover;
+}
+
+.headquarters-image-Paris {
+    height: 5cm;
+    width: 5cm;
+    border-radius: 50%;
+    border: 0.3px solid black;
+    background-image: url(../img/paris.jpg);
+    background-size: cover;
+}
+
+.headquarters-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 3.3cm;
+}
+
+#input-name {
+    width: 400pt;
+    height: 20pt;
+}
+
+#birth-date {
+    width: 402pt;
+    height: 20pt;
+}
+
+textarea {
+    width: 400pt;
+    height: 50pt;
+}
+
+#submit {
+    padding: 0.2cm;
+    width: 466pt;
+    border: none;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background: #FFF2EF ;
+    margin-top: -3px;
+}
+
+.form-output {
+    display: inline;
+    padding-left: 30px;
+}
+
+.message-us {
+    display: inline;
+    padding-left: 20pt;
+}
+
+.message-us-form {
+    flex-direction: row;
+    display: flex;
+    flex: 1;
+    padding-left: 20pt;
+}
+
+footer > p{
+    text-align: center;
+    font-size: 9pt;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+  }
+
+a:hover {
+    color:#e6005c;
+}
+
+@media only screen and (max-width: 600px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 14px;
+    }
+
+    .hero {
+        background-image: url(../img/beach.jpg);
+        height: 300px;
+        width: 600px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        object-fit: contain;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .message-us {
+        flex-direction: column;
+        position: relative;
+    }
+
+    #input-name {
+        width: fit-content;
+        height: auto;
+    }
+
+    #birth-date {
+        width: fit-content;
+        height: auto;
+    }
+
+    textarea {
+        width: fit-content;
+        height: auto;
+    }
+
+    #submit {
+        width: fit-content;
+        height: auto;
+    }
+
+    .form-output {
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (min-width: 992px) {
+    .home {
+        flex-direction: row;
+    }
+
+    .nav-bar {
+        flex-direction: row;
+    }
+
+    .hero {
+        background-image: url(../img/beach.jpg);
+        height: 560px;
+    }
+
+    .wrapper {
+        flex-direction: row;
+        text-align: center;
+    }
+}

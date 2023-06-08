@@ -1,0 +1,230 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 .3rem .3rem rgba(0,0,0,.1);
+    padding-left: 20pt;
+    padding-right: 20pt;
+}
+
+.logo {
+    height: 2.5cm;
+}
+
+.hero {
+    background: url("../img/pic7.jpg");
+    height: 400px;
+    object-fit: contain;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 4rem;
+    font-weight: 550;
+    margin-bottom: 0;
+    padding-top: 11%;
+    padding-left: 40%;
+}
+
+.nav-bar {
+    display: flex;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+.nav-item {
+    padding: 5px 1cm;
+    width: 78px;
+    border-right: 1px solid grey;
+    text-align: center;
+    cursor: pointer;
+} 
+
+.nav-item:hover {
+    background: #FFF2EF;
+    margin-top: -3px;
+}
+
+.nav-bar:last-child {
+    border-right: none;
+}
+    
+footer > p{
+    text-align: end;
+}
+
+.about-us {
+    background: url("../img/pic8.jpg");
+    height: 300px;
+    object-fit: contain;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    justify-content: left;
+}
+
+.about-us > h1 {
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-left: 26%;
+    
+}
+
+.about-us > p{
+    font-size: 15pt;
+    font-weight: 100;
+    margin-top: 1rem;
+    padding-right: 40%;
+    padding-left: 5%;
+    text-align: justify;
+    text-decoration: underline;
+    text-decoration-color: #B6D5F0;
+}
+
+.vision {
+    background: url("../img/pic10.jpg");
+    height: 305px;
+    object-fit: contain;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+
+.vision > h1 {
+    text-align: right;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-right: 27%;
+    padding-top: 5%;
+}
+
+.vision > p{
+    font-size: 15pt;
+    font-weight: 100;
+    margin-top: 1rem;
+    padding-left: 40%;
+    padding-right: 5%;
+    text-align: justify;
+    text-decoration: underline;
+    text-decoration-color: #DB9394;
+}
+
+.mission {
+    background: url("../img/pic9.jpg");
+    height: 300px;
+    object-fit: contain;
+    background-size: cover;
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+.mission > h1 {
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-left: 30%;
+    padding-top: 4%;
+}
+
+.mission > p{
+    font-size: 15pt;
+    font-weight: 100;
+    margin-top: 1rem;
+    padding-right: 30%;
+    padding-left: 5%;
+    text-align: justify;
+    text-decoration: underline;
+    text-decoration-color: #E1BC89;
+}
+
+footer > p{
+    text-align: center;
+    font-size: 9pt;
+}
+
+a:link {
+    color:black;
+    text-decoration: none;
+  }
+
+a:hover {
+    color:#e6005c;
+}
+
+@media only screen and (max-width: 600px) {
+    .home {
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 14px;
+    }
+
+    .hero {
+        background-image: url(../img/pic7.jpg);
+        height: 300px;
+        width: 600px;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        text-align: right;
+    }
+
+    .about-us {
+        display: inline-block;
+        background-image: url(../img/pic8.jpg);
+        height: 300px;
+    }
+
+    .about-us > h1 {
+        font-size: 1.5rem;
+    }
+    
+    .about-us > p{
+        font-size: 10pt;
+    }
+
+    .vision {
+        background-image: url(../img/pic10.jpg);
+        height: 305px;
+    }
+
+    .vision > h1 {
+        font-size: 1.5rem;
+    }
+    
+    .vision > p{
+        font-size: 10pt;
+    }
+
+    .mission {
+        display: inline-block;
+        background-image: url(../img/pic9.jpg);
+        height: 300px;
+    }
+
+    .mission > h1 {
+        font-size: 1.5rem;
+    }
+    
+    .mission > p{
+        font-size: 10pt;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .hero {
+        background-image: url(../img/pic7.jpg);
+        height: 400px;
+    }
+}
